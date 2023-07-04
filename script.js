@@ -1,12 +1,3 @@
-// Function to set the button identifier
-function setButtonId(buttonId) {
-    localStorage.setItem('buttonId', buttonId);
-  }
-  
-  // Function to get the button identifier
-//   function getButtonId() {
-//     return localStorage.getItem('buttonId');
-//   }
 let activeButton = null;
 
 function toggleButton(button) {
@@ -22,7 +13,7 @@ function toggleButton(button) {
   }
 }
 
-function handlesubmit() {
+function handleSubmit() {
   let submitButton = document.getElementById("submit");
   submitButton.disabled = true;
 
@@ -31,7 +22,7 @@ function handlesubmit() {
     let button = ratingButtons[i];
     if (button.classList.contains("active")) {
       submitButton.disabled = false;
-      window.location.href='thankyou.html';
+      window.location.href = 'thankyou.html';
       return; // Exit the function and prevent navigation
     }
   }
@@ -40,8 +31,18 @@ function handlesubmit() {
   window.alert("Please select a rating button");
 }
 
-  
-  
-    
+function init() {
+  let submitButton = document.getElementById("submit");
+  submitButton.addEventListener("click", handleSubmit);
 
-  
+  let ratingButtons = document.querySelectorAll(".box");
+  for (let i = 0; i < ratingButtons.length; i++) {
+    let button = ratingButtons[i];
+    button.addEventListener("click", function () {
+      toggleButton(button);
+    });
+  }
+}
+
+// Call the init function when the document is loaded
+document.addEventListener("DOMContentLoaded", init);
