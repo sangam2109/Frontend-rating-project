@@ -1,94 +1,77 @@
 *{
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
+  
 }
 body{
-    background-color: hsl(216, 12%, 8%);
-    font-family: 'Diphylleia', serif;
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+  ;
 }
 .container{
-    width: 30vw;
-    height: 64vh;
-    background-color:  hsl(213, 19%, 18%);
-    border-radius: 30px;
-    margin: 18vh 35vw 18vh 35vw;
+  width: 25vw;
+  height: 60vh;
+  background-color:  hsl(213, 19%, 18%);
+  border-radius: 30px;
+  margin: 15.5vh 35.5vw 15.5vh 35.5vw;
+  padding: 2vw;
 }
 .thankyou-logo{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 5vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5vh;
 }
-.score{
-    display: flex;
-    height: 4vh;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 20px 20px 20px 20px; /* Adjust the values as per your preference */
-    margin: 10vh 4vw 1vh 4vw;
-    /* margin-top:10vh; */
-    padding: 1vh;
-    color:hsl(25, 97%, 53%);
-    background-color: hsl(213, 19%, 18%);
+.score {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 12vh auto 4vh auto;
+  padding: 1vh;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  max-width: 80%;
+  width: 13rem;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-h1{
-    display: flex;
-    justify-content: center;
-}
+
 h1,p{
-    margin: 0vh 2vw .5vh 2vw;
-    color: white;
+  margin: 0vh .8vw 2vh .8vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}p{
+  font-size: 13.3px;
 }
-@media screen and (max-width: 1260px) {
-    .container {
-      width: 60vw;
-      margin: 18vh auto;
-      padding: 2vh;
-    }
-  
-    .score {
-      margin: 10vh 3vw 1vh 3vw;
-    }
-  
-    h1,
-    p {
-      margin: 0vh 2vw 0.5vh 2vw;
-    }
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 70%;
+    height: 60vh;
+    margin: 20vh auto;
+    padding: 2vh;
   }
-  
-  @media screen and (max-width: 800px) {
-    .container {
-      width: 90vw;
-      height: auto;
-      margin: 18vh auto;
-      padding: 2vh;
-    }
-  
-    .score {
-      margin: 10vh 2vw 1vh 2vw;
-    }
-  
-    h1,
-    p {
-      margin: 0vh 2vw 0.5vh 2vw;
-    }
+
+p{
+  margin: 8vh 14vw ;
+}
+}
+@media screen and (min-width: 250px) and (max-width: 400px) {
+  .container {
+    width: 80vw;
+    height: auto;
+    margin: 15vh auto;
+    padding: 1.5vh;
   }
-@media screen and (max-width: 400px) {
-    .container {
-      width: 90vw;
-      height: auto;
-      margin: 18vh auto;
-      padding: 2vh;
-    }
-  
-    .score {
-      margin: 10vh 2vw 1vh 2vw;
-    }
-  
-    h1,
-    p {
-      margin: 0vh 2vw 0.5vh 2vw;
-    }
+
+  .score {
+    width: 70%;
+    margin: 8vh auto 1vh auto;
   }
+}
