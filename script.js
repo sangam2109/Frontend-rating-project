@@ -37,7 +37,7 @@ function toggleButton(button) {
 }
 
 function handlesubmit() {
-  let submitButton = document.getElementById("submit");
+  let submitButton = document.getElementById("submit-button");
   let ratingButtons = document.querySelectorAll(".box");
 
   for (let i = 0; i < ratingButtons.length; i++) {

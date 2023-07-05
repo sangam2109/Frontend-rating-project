@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Thankyou</title>
 </head>
+
 <body>
     <div class="container">
-        
-        <div class="thankyou-logo"><img src="images/illustration-thank-you.svg" alt=""></div>
-        
+
+        <img class="thankyou-logo" src="images/illustration-thank-you.svg" alt="">
+
         <div class="score" id="score">
             You selected&nbsp;<span id="buttonText"></span>&nbsp;out of 5
         </div>
         <div class="data">
             <h1>Thank you!</h1>
-            <p> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            <p> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get
+                in touch!</p>
         </div>
     </div>
 
@@ -30,6 +33,11 @@
         const buttonTextElement = document.getElementById("buttonText");
         buttonTextElement.textContent = buttonId;
     </script>
-   
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Sangam Arora</a>.
+    </footer>
 </body>
+
 </html>
